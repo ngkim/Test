@@ -42,6 +42,7 @@ public class JavaHttpsExample {
 		
 		Response res = client.target(httpsURL).request(MediaType.APPLICATION_XML_TYPE).post(null);
 
+		System.out.println("Git Test");
 		System.out.println(res.readEntity(String.class));
 	 
 	    client.close();
